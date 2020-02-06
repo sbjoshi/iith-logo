@@ -14,8 +14,8 @@ Use the following command to compile if you just want the logo image, without th
   
 Requires the following fonts:
 
-* Liberation Sans
-* Nakula
+* [Liberation Sans](https://www.fontsquirrel.com/fonts/download/liberation-sans)
+* [Nakula](http://bombay.indology.info/software/fonts/devanagari/nakula.ttf)
 
 Requires the following LaTeX packages:
 
