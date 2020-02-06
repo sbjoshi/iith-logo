@@ -1,7 +1,7 @@
 %% Copyright (C) 2020 Saurabh Joshi
 %% 
 \documentclass[english]{article}
-\usepackage[T1]{fontenc}
+\usepackage{iftex}
 %\usepackage[latin9]{inputenc}
 \usepackage{geometry}
 \geometry{verbose,tmargin=2cm,bmargin=3cm,lmargin=1.8cm,rmargin=1.5cm,headheight=2cm,headsep=2cm,footskip=3cm}
@@ -22,12 +22,15 @@
 
 
 \makeatother
+\ifxetex
+\usepackage[T1]{fontenc}
 \usepackage{fontspec}
-\usepackage{tikz}
-\usepackage{xcolor}
 \newfontfamily\nakulafont[AutoFakeBold=2]{Nakula}
 \newfontfamily\liberationfont{Liberation Sans Narrow}
 \newfontfamily\liberationsansfont{Liberation Sans}
+\fi
+\usepackage{tikz}
+\usepackage{xcolor}
 
 %\usepackage{babel}
 \begin{document}
@@ -62,8 +65,10 @@ Indian Institute of Technology Hyderabad \newline
 \fill [orange3]    (1.7,8.4) -- (1.7,1.6) -- (1.0,1.2) -- (1.0,8.8) -- (1.7,8.4);
 \fill [yellow1]    (9.1,8.4) -- (9.1,1.6) -- (9.7,1.2) -- (9.7,8.8) -- (9.1,8.4);
 \fill [yellow1]    (0.9,8.4) -- (0.9,1.6) -- (0.3,1.2) -- (0.3,8.8) -- (0.9,8.4);
+\ifxetex
 \node [scale=2.1] at (5,-0.1)  {   {\bf {\nakulafont  भारतीय प्रौद्योगिकी संस्थान हैदराबाद }} };
 \node [scale=1.8] at (5,-1.2) {   {\bf {\liberationsansfont Indian Institute of Technology Hyderabad}} };
+\fi
 \end{tikzpicture}
 % \includegraphics[scale=0.05]{logo_iith} \newline
 
