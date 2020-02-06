@@ -1,5 +1,6 @@
 # iith-logo
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+
 IITH Logo and Letterhead in LaTeX
 
 Use the following command to compile if you want logo to appear with "Indian Institute of Technology" in Hindi and English in appropriate fonts below the logo image:
