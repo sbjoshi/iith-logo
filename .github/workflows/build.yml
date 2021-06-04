@@ -3,10 +3,11 @@ name: Build LaTeX document
 on: 
   push:
     branches: 
-      - main
+      - master
   pull_request_target:
     branches: 
-      - main
+      - master
+  
 
 jobs:
   build_latex:
